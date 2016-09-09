@@ -1,0 +1,7 @@
+node_modules
+build
+upload
+*.log
+
+.idea/
+.DS_Store
