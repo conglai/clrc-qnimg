@@ -4,6 +4,7 @@
   "description": "clrc qnimg",
   "scripts": {
   },
+  "main": "src/index.js",
   "license": "MIT",
   "devDependencies": {
     "babel-core": "^6.5.2",
