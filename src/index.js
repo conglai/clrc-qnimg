@@ -69,6 +69,7 @@ export default class QNImage extends Component{
   loadPic = config => {
     if(this._loading) return;
     config = config || this.props.config;
+    this._config = config;
     let propSrc = QNImage.getPathOfQiniu(config);
     let img = new Image();
     img.onload = () => {
@@ -84,6 +85,7 @@ export default class QNImage extends Component{
 
   render() {
     let { config, lazy } = this.props;
+    config = this._config || config;
     let { stateSrc } = this.state || {};
     let newStyle = {};
     if(!stateSrc && !lazy) {
