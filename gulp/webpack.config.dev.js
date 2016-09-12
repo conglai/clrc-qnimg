@@ -39,14 +39,6 @@ var config = {
       { test: /\.jsx?$/,
         loader: 'babel', // 'babel-loader' is also a legal name to reference
         exclude: /node_modules/,
-        query: {
-          presets: ['react', 'es2015', 'stage-0'],
-          plugins: [
-            'transform-runtime',
-            'transform-class-properties',
-            'transform-es2015-object-super'
-          ]
-        }
       },
       { test: /\.ejs$/, loader: 'ejs-loader?variable=data' },
       { test: /\.png$/, loader: 'url-loader?mimetype=image/png' },

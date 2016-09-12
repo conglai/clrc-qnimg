@@ -1,12 +1,14 @@
 {
   "name": "clrc-qnimg",
-  "version": "0.1.0",
+  "version": "0.2.1",
   "description": "clrc qnimg",
   "scripts": {
+    "build": "babel src -d lib"
   },
-  "main": "src/index.js",
+  "main": "lib/index.js",
   "license": "MIT",
   "devDependencies": {
+    "babel-cli": "^6.14.0",
     "babel-core": "^6.5.2",
     "babel-eslint": "^5.0.0",
     "babel-loader": "^6.2.3",
@@ -21,9 +23,9 @@
     "browser-sync": "^2.11.1",
     "css-loader": "~0.10.1",
     "eslint-loader": "^1.3.0",
+    "eslint-plugin-react": "^6.2.0",
     "estraverse-fb": "^1.3.1",
     "extract-text-webpack-plugin": "^1.0.1",
-    "eslint-plugin-react": "^6.2.0",
     "file-loader": "^0.8.4",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
