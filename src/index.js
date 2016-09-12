@@ -66,9 +66,9 @@ export default class QNImage extends Component{
     return !!this._loaded;
   }
 
-  loadPic = () => {
+  loadPic = config => {
     if(this._loading) return;
-    let { config } = this.props;
+    config = config || this.props.config;
     let propSrc = QNImage.getPathOfQiniu(config);
     let img = new Image();
     img.onload = () => {
