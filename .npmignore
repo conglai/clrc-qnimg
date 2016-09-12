@@ -1,0 +1,8 @@
+node_modules
+build
+gulp
+.*
+*.log
+
+.idea/
+.DS_Store
